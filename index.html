@@ -347,7 +347,11 @@
       <br>
       <br>
       <p>Do you have a question/idea/suggestion about the product? Fill out the form and fill me in with the details :) We love listening to you!</p>
-      <form action="/action_page.php" target="_blank">
+
+      <!-- Form -->
+      <!-- this will be sent to serveras POST:
+      /action_page.php?Name=aaa&Email=bbb&Message=cccc -->
+      <form action="./action_page.py" target="_blank" method="post">
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
@@ -361,7 +365,7 @@
           <input class="w3-input w3-border" type="text" name="Message" required>
         </div>
         <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-      </form>
+      </form> <!-- End of Form -->
     </div>
 
   <!-- End page content -->
