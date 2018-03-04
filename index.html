@@ -28,8 +28,8 @@
     background-image: url("./assets/view1.jpg");
   }
   img:hover{
-    opacity:0.9;
-    cursor: zoom-in;
+    opacity:1.0;
+    /*cursor: zoom-in;*/
   }
 </style>
 
@@ -38,20 +38,17 @@
   <!-- Sidebar/menu -->
   <nav class="w3-sidebar w3-pale-green w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:200px;font-weight:bold;" id="mySidebar"><br>
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-    <!-- <div class="w3-container">
-      <h3 class="w3-padding-64"><b>48 Plantation<br><br>resort</b></h3>
-    </div> -->
     <div class="w3-bar-block">
       <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Welcome !</a>
       <a href="#information" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Information</a>
       <!-- <a href="#details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Details</a> -->
-      <a href="#gallery1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Gallery 1</a>
-      <a href="#gallery2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Gallery 2</a>
-      <a href="#woodbrook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Questions</a>
-      <a href="#attractions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Local Area</a>
+      <a href="#gallery1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Gallery 1</a>
+      <a href="#gallery2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Gallery 2</a>
+      <a href="#woodbrook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Questions</a>
+      <a href="#attractions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Local Area</a>
       <!-- <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Links</a> -->
-      <a href="#price" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Price</a>
-      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Contact</a>
+      <a href="#price" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Price</a>
+      <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Contact</a>
     </div>
   </nav>
 
@@ -73,7 +70,7 @@
       <h1><b>48 Plantation way, Fitzwilliam, NH 03447</b></h1>
       <h1><b>Woodbrook Camp & Tennis club</b></h1>
       <br>      <br>      <br>      <br>      <br>
-      <!-- <hr style="width:50px;border:5px solid red" class="w3-round"> -->
+
     </div> <!-- end of Header-->
 
     <!-- Information -->
@@ -139,8 +136,8 @@
     <!-- Photo grid (modal) -->
     <!-- <div class="w3-row-padding" id="gallery"> -->
     <div class="w3-container" id="gallery1" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Gallery 1</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h1 class="w3-xxxlarge w3-text-teal"><b>Gallery 1</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
       <div class="w3-content w3-display-container">
         <img class="mySlides" src="./assets/dom1.jpg">
         <img class="mySlides" src="./assets/dom2.jpg">
@@ -178,8 +175,8 @@
     </div>
 
     <div class="w3-container" id="gallery2" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Gallery 2</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h1 class="w3-xxxlarge w3-text-teal"><b>Gallery 2</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
       <div class="w3-content w3-display-container">
         <!-- <img class="mySlides2" src="./assets/beach1.jpg" width=100%> -->
         <img class="mySlides2" src="./assets/berries1.jpg">
@@ -278,8 +275,8 @@
 
     <!-- FAQ -->
     <div class="w3-container" id="attractions" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>F A Q. Questons and Answers</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h1 class="w3-xxxlarge w3-text-teal"><b>F A Q. Questons and Answers</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
       <p>Q: What is included in condo fee?</p>
       <p>A: The condo fee includes: water, electricity and all year common area maintenance.</p>
       <br>
@@ -351,9 +348,9 @@
 
     <!-- Links -->
     <div class="w3-container" id="links" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Local area links</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
-      <h5 class="w3-large w3-text-red"><b>Attractions</b></h4>
+      <h1 class="w3-xxxlarge w3-text-teal"><b>Local area links</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
+      <h4 class="w3-lxarge w3-text-teal"><b>Attractions</b></h4>
         <ul>
           <li>Monadnock area - State Park, Hiking, Berries</li>
           <li>Waterfalls, Lakes, Rivers</li>
@@ -361,14 +358,16 @@
           <li>Cayaking, Hiking, Byking</li>
           <li>Charming towns: Fitzwilliam, Peterborough, Jaffrey and others</li>
           <li>Keene downtown and Pumpkin festival</li>
-          <li>Ski</li>
-          <li>Cross-country resort</li>
+          <li>Ski </li>
+          <li>Cross-country skiing and snowshoeing</li>
           <li>Fishing and boating</li>
           <li>Rododendron Park</li>
-          <li>Museums</li>
+          <li>Historic sight-seeing and museums</li>
+          <li>Antiquing</li>
         </ul>
-      <h5 class="w3-large w3-text-red"><b>Links</b></h4>
+      <h4 class="w3-large w3-text-teal"><b>Links</b></h4>
         <ul>
+          <li><a href="http://www.newhampshire.com/apps/pbcs.dll/article?AID=/99999999/NEWHAMPSHIRE05/110429464">Twenty Things to Do in the NH Monadnock Region</a></li>
           <li><a href="http://www.woodbrooknh.com/">Woodbrook Camp</a></li>
           <li><a href="http://fitzwilliam-nh.gov/">Town of Fitzwilliam</a></li>
           <li><a href="https://www.nhstateparks.org/visit/state-parks/monadnock-state-park.aspx">Monadnock State Park</a></li>
@@ -376,6 +375,8 @@
           <li><a href="http://jaffreyfireworks.com/">Jaffrey Festival of Fireworks</a></li>
           <li><a href="https://www.peterboroughplayers.org/">Peterborough Players</a></li>
           <li><a href="http://www.downtownkeene.com/">Downtown Keene</a></li>
+          <li><a href="http://windblownxc.com/">Cross country skiing and snowshoeing</a></li>
+          <li><a href="https://discovermonadnock.com/shopping/antiques/">Discover antique shopping</a></li>
         </ul>
     </div>
 
@@ -419,23 +420,26 @@
 
     <!-- Price -->
     <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Price</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h1 class="w3-xxxlarge w3-text-teal"><b>Price</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
       <!-- <p>Visit us on Facebook</p>
       <button onclick="window.open('https://www.facebook.com/instralabs/','_blank')">Visit on Facebook</button>
       <br> -->
       <br>
-      <p>The price is: $164,000.00 </p>
+      <p>The price is: $164,900.00 </p>
 
     <!-- Contact -->
     <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Contact us</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <h1 class="w3-xxxlarge w3-text-teal"><b>Contact us</b></h1>
+      <hr style="width:50px;border:5px solid teal" class="w3-round">
       <!-- <p>Visit us on Facebook</p>
       <button onclick="window.open('https://www.facebook.com/instralabs/','_blank')">Visit on Facebook</button>
       <br> -->
       <br>
-      <p>Do you have a question? Email us: <b>elena@u-mega.com</b> </p>
+      <p>Do you have a question?</p>
+      <br>
+      <p>Email:    <b>elena@u-mega.com</b> </p>
+      <p>Phone:    <b>617 - 543 - 8740</b> </p>
 
       <!-- Form -->
       <!-- this will be sent to serveras POST:
@@ -463,7 +467,8 @@
 
   <!-- W3.CSS Container -->
   <!-- <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">InstraLabs</a></p></div> -->
-  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"> 48 Plantation</p></div>
+  <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px">
+    <p class="w3-right"> 48 Plantation way, Fitzwilliam, NH 03447</p></div>
 
   <script>
   // Script to open and close sidebar
