@@ -5,6 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <style>
   body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
   body {font-size:16px;}
@@ -37,10 +45,11 @@
       <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Welcome !</a>
       <a href="#information" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-teal w3-text-red">Information</a>
       <!-- <a href="#details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Details</a> -->
-      <a href="#gallery" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Gallery</a>
-      <a href="#woodbrook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Woodbrook</a>
-      <a href="#attractions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Attractions</a>
-      <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Links</a>
+      <a href="#gallery1" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Gallery 1</a>
+      <a href="#gallery2" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Gallery 2</a>
+      <a href="#woodbrook" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Questions</a>
+      <a href="#attractions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Local Area</a>
+      <!-- <a href="#links" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Links</a> -->
       <a href="#price" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Price</a>
       <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white w3-text-red">Contact</a>
     </div>
@@ -128,26 +137,72 @@
     </div> <!--end of Information -->
 
     <!-- Photo grid (modal) -->
-    <div class="w3-row-padding" id="gallery">
-      <div class="w3-third">
-        <img src="./assets/street-1.jpg" style="width:80%" onclick="onClick(this)" alt="Carry it on your back">
-        <img src="./assets/guitar03.jpg" style="width:80%" onclick="onClick(this)" alt="interior view - both shapes">
-        <img src="./assets/GS man 1c.png" style="width:80%" onclick="onClick(this)" alt="Congo on the back">
-      </div>
+    <!-- <div class="w3-row-padding" id="gallery"> -->
+    <div class="w3-container" id="gallery1" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Gallery 1</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-content w3-display-container">
+        <img class="mySlides" src="./assets/dom1.jpg">
+        <img class="mySlides" src="./assets/dom2.jpg">
+        <img class="mySlides" src="./assets/dom3.jpg">
+        <img class="mySlides" src="./assets/dom4.jpg">
+        <img class="mySlides" src="./assets/house1-screen1.jpg">
+        <img class="mySlides" src="./assets/house2 bdr2.jpg">
+        <img class="mySlides" src="./assets/house3 2f.jpg">
+        <img class="mySlides" src="./assets/house4 bdr1.jpg">
+        <img class="mySlides" src="./assets/dom5.jpg">
+        <img class="mySlides" src="./assets/house5 hall.jpg">
+        <img class="mySlides" src="./assets/dom6.jpg">
+        <img class="mySlides" src="./assets/dom7.jpg">
+        <img class="mySlides" src="./assets/house6 bdr3.jpg">
+        <img class="mySlides" src="./assets/house7 2fl.jpg">
+        <img class="mySlides" src="./assets/dom8.jpg">
+        <img class="mySlides" src="./assets/dom9.jpg">
+        <img class="mySlides" src="./assets/house7 kitch.jpg">
+        <img class="mySlides" src="./assets/dom10.jpg">
+        <img class="mySlides" src="./assets/dom11.jpg">
+        <img class="mySlides" src="./assets/dom13.jpg">
+        <img class="mySlides" src="./assets/dom14.jpg">
+        <img class="mySlides" src="./assets/dom15.jpg">
+        <img class="mySlides" src="./assets/dom18.jpg">
+        <img class="mySlides" src="./assets/dom19.jpg">
+        <img class="mySlides" src="./assets/dom20.jpg">
+        <img class="mySlides" src="./assets/dom22.jpg">
+        <img class="mySlides" src="./assets/dom23.jpg">
+        <img class="mySlides" src="./assets/dom24.jpg">
+        <img class="mySlides" src="./assets/dom25.jpg">
 
-      <div class="w3-third">
-        <img src="./assets/InstraLabs live 2.png" style="width:90%" onclick="onClick(this)" alt="Guitar-shape case">
-        <img src="./assets/guitar01c.png" style="width:80%" onclick="onClick(this)" alt="Congo with rectangular case">
-        <img src="./assets/guitar02.jpg" style="width:80%" onclick="onClick(this)" alt="exterior view - both shapes">
-      </div>
-
-      <div class="w3-third">
-        <img src="./assets/guitar01b.jpg" style="width:80%" onclick="onClick(this)" alt="Congo with guitar-shaped case">
-        <img src="./assets/02.jpg" style="width:50%" onclick="onClick(this)" alt="interior view">
-        <img src="./assets/street-2.jpg" style="width:80%" onclick="onClick(this)" alt="Carry it on your back">
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
       </div>
     </div>
 
+    <div class="w3-container" id="gallery2" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Gallery 2</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <div class="w3-content w3-display-container">
+        <!-- <img class="mySlides2" src="./assets/beach1.jpg" width=100%> -->
+        <img class="mySlides2" src="./assets/berries1.jpg">
+        <img class="mySlides2" src="./assets/comm1.jpg">
+        <img class="mySlides2" src="./assets/woodbr 9 sport.jpg">
+        <img class="mySlides2" src="./assets/woodbr8 beach.jpg">
+        <img class="mySlides2" src="./assets/woodbr10 beach.jpg">
+        <!-- <img class="mySlides2" src="./assets/woodbr11 pool.jpg"> -->
+        <img class="mySlides2" src="./assets/woodbr2.jpg">
+        <img class="mySlides2" src="./assets/beach2.jpg">
+        <img class="mySlides2" src="./assets/berries2.jpg">
+        <img class="mySlides2" src="./assets/woodbr3.jpg">
+        <img class="mySlides2" src="./assets/woodbr5 bocce.jpg">
+        <img class="mySlides2" src="./assets/woodbr6 pool.jpg">
+        <img class="mySlides2" src="./assets/woodbr4 kids.jpg">
+        <img class="mySlides2" src="./assets/woodbr7 pool.jpg">
+        <img class="mySlides2" src="./assets/beach3.jpg">
+        <img class="mySlides2" src="./assets/berries3.jpg">
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs2(+1)">&#10095;</button>
+      </div>
+    </div>
     <!-- Modal for full size images on click-->
     <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
       <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
@@ -157,12 +212,12 @@
       </div>
     </div>
 
-    <!-- Woodbrook -->
-    <div class="w3-container" id="woodbrook" style="margin-top:75px">
+    <!-- Attractions-->
+    <!-- <div class="w3-container" id="woodbrook" style="margin-top:75px">
       <h1 class="w3-xxxlarge w3-text-red"><b>Woodbrook</b></h1>
-      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <hr style="width:50px;border:5px solid red" class="w3-round"> -->
       <!-- <h2><strong>Components</strong></h2> -->
-      <h2 class="w3-xlarge w3-text-red"><b>Components</b></h2>
+      <!-- <h2 class="w3-xlarge w3-text-red"><b>Components</b></h2>
       <p>Let’s briefly review the components.
         See the numbered components on pictures below.</p>
       <p>There are two horizontal straps, upper(1) and lower(2)</p>
@@ -188,26 +243,10 @@
       </p>
       <img src="./assets/01c-1.png"  style="width:50%" onclick="onClick(this)" alt="Adjustors">
 
-      <p>Note the <strong>sliders at the ends of the straps</strong>. They keep the straps nice and neat.
-      </p>
-      <p>Also, let’s take a look at the other side of the Congo Carrier.
-        Note the <strong>shoulder straps (6)</strong>,
-        the <strong>chest strap (7)</strong>, and the <strong>handle (8)</strong>.
-      </p>
-      <img src="./assets/01d-1.png"  style="width:50%" onclick="onClick(this)" alt="shoulder (6), chest (7) and handle (8) straps">
-
       <h2 class="w3-xlarge w3-text-red"><b>Equipping</b></h2>
       <p>Attaching the straps to the case is really easy. <br>
         First, lean your case against something, like a table, upside down,
         so that the heavy side is up.
-      </p>
-      <p>Second, loosen the strap adjustors on the horizontal straps.
-        Then place the Congo Carrier onto the case, like this.
-      </p>
-      <p>Now, tighten the vertical strap adjustors so that the case will be level,
-        as described earlier.<br>
-        The first time you attach, the height may not be right,
-        but the second time will be perfect.
       </p>
       <p>Once you have the position established, tighten the horizontal strap adjustors.
         Just tight enough to be comfortable snug against the case.<br>
@@ -235,24 +274,42 @@
          bottom, like on the picture below.
       </p>
       <img src="./assets/04gs-1.png" style="width:50%" onclick="onClick(this)" alt="chest straps replaced to support guitar-shape case">
-    </div> <!-- end of Woodbrook-->
+    </div> <!- end of Woodbrook-->
 
-    <!-- Attractions -->
+    <!-- FAQ -->
     <div class="w3-container" id="attractions" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Attractions</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>F A Q. Questons and Answers</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p>Q: Can I use the Congo Carrier to carry both rectangular and guitar-shaped cases?</p>
-      <p>A: You certainly can. But we recommend removing the chest strap and attaching it at the bottom. (See photo)</p>
-      <img src="./assets/04gs-1.png" width=50%>
-      <p>Q: Is CONGO only available on Amazon?</p>
-      <p>A: For now, but we will also be selling it on eBay, etsy, as well as this very site!</p>
+      <p>Q: What is included in condo fee?</p>
+      <p>A: The condo fee includes: water, electricity and all year common area maintenance.</p>
       <br>
-      <button onclick="window.open('https://www.amazon.com/Congo-Carrier-Hard-Instrument-Cases/dp/B07812LX8L','_blank')">Shop on Amazon</button>
+      <p>Q: What is included in common areas?</p>
+      <p>A: Beatiful private sandy beach, in-ground pool, Recreation area with baseball field,
+        basketbal and tennis courts, bocce court, Club-house with billiard, TV,
+        darts, table games, Parking, and more</p>
       <br>
+      <p>Q: How to contact the seller?</p>
+      <p>A: Email: elena@u-mega.com or phone: 617-543-8740</p>
       <br>
-      <p>Q: Can I access the inside of my case without removing CONGO?</p>
-      <p>A: Definitely. Just unlock the side buckles on the left and grab what you need.</p>
+      <p>Q: When I can see the property?</p>
+      <p>A: The property is available for showing. Contact the seller to coordinate the visit.</p>
       <br>
+      <p>Q: Is the property ready to move-in?</p>
+      <p>A: Yes.</p>
+      <br>
+      <p>Q: Is it gated community?</p>
+      <p>A: Yes, it is private gated community. There are security cameras too. See more on Woodbrook web site</p>
+      <br>
+      <p>Q: Can I visit the camp off-season?</p>
+      <p>A: Yes, you can visit the camp during off-season time for 7 days a month.
+      See Rules and Regulations for more details if you want to visit for more extended time period.</p>
+      <br>
+      <p>Q: Is fishing allowed in the Sip pond?</p>
+      <p>A: Yes, fishing (fishing license required), swimming, boating are allowed. You can also do ice-fishing in the winter time</p>
+      <br>
+      <p>Q: Are there activities for children?</p>
+      <p>A: There is lots of fun in Woodbrook. There are multiple activities, tournaments, celebrations for kids and grown-up during the season.
+      See the Woodbrok Event Calendar for details. </p>
       <br>
       <p>Q: I have a question/idea/suggestion about the product. How can I submit it?</p>
       <p>A: Contact Us (soon)</p>
@@ -294,17 +351,39 @@
 
     <!-- Links -->
     <div class="w3-container" id="links" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Links</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Local area links</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
-      <!-- <p>Buy CONGO on Amazon</p> -->
-      <button onclick="window.open('https://www.amazon.com/Congo-Carrier-Hard-Instrument-Cases/dp/B07812LX8L','_blank')">Buy CONGO on Amazon</button>
+      <h5 class="w3-large w3-text-red"><b>Attractions</b></h4>
+        <ul>
+          <li>Monadnock area - State Park, Hiking, Berries</li>
+          <li>Waterfalls, Lakes, Rivers</li>
+          <li>Fireworks Festival in Jaffrey (August)</li>
+          <li>Cayaking, Hiking, Byking</li>
+          <li>Charming towns: Fitzwilliam, Peterborough, Jaffrey and others</li>
+          <li>Keene downtown and Pumpkin festival</li>
+          <li>Ski</li>
+          <li>Cross-country resort</li>
+          <li>Fishing and boating</li>
+          <li>Rododendron Park</li>
+          <li>Museums</li>
+        </ul>
+      <h5 class="w3-large w3-text-red"><b>Links</b></h4>
+        <ul>
+          <li><a href="http://www.woodbrooknh.com/">Woodbrook Camp</a></li>
+          <li><a href="http://fitzwilliam-nh.gov/">Town of Fitzwilliam</a></li>
+          <li><a href="https://www.nhstateparks.org/visit/state-parks/monadnock-state-park.aspx">Monadnock State Park</a></li>
+          <li><a href="http://www.monadnockdining.com/">Monadnock dining</a></li>
+          <li><a href="http://jaffreyfireworks.com/">Jaffrey Festival of Fireworks</a></li>
+          <li><a href="https://www.peterboroughplayers.org/">Peterborough Players</a></li>
+          <li><a href="http://www.downtownkeene.com/">Downtown Keene</a></li>
+        </ul>
     </div>
 
-    <div class="w3-row-padding">
+    <!-- <div class="w3-row-padding">
       <div class="w3-half w3-margin-bottom">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
-          <li class="w3-padding-16">Floorplanning</li>
+          <li class="w3-dark-grey w3-xlarge w3-padding-32">Place</li>
+          <li class="w3-padding-16">Woodbrook Camp site</li>
           <li class="w3-padding-16">10 hours support</li>
           <li class="w3-padding-16">Photography</li>
           <li class="w3-padding-16">20% furniture discount</li>
@@ -321,8 +400,8 @@
 
       <div class="w3-half">
         <ul class="w3-ul w3-light-grey w3-center">
-          <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
-          <li class="w3-padding-16">Floorplanning</li>
+          <li class="w3-red w3-xlarge w3-padding-32">Link</li>
+          <li class="w3-padding-16">http://www.woodbrooknh.com/</li>
           <li class="w3-padding-16">50 hours support</li>
           <li class="w3-padding-16">Photography</li>
           <li class="w3-padding-16">50% furniture discount</li>
@@ -336,22 +415,33 @@
           </li>
         </ul>
       </div>
-    </div>
+    </div> -->
+
+    <!-- Price -->
+    <div class="w3-container" id="contact" style="margin-top:75px">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Price</b></h1>
+      <hr style="width:50px;border:5px solid red" class="w3-round">
+      <!-- <p>Visit us on Facebook</p>
+      <button onclick="window.open('https://www.facebook.com/instralabs/','_blank')">Visit on Facebook</button>
+      <br> -->
+      <br>
+      <p>The price is: $164,000.00 </p>
 
     <!-- Contact -->
     <div class="w3-container" id="contact" style="margin-top:75px">
-      <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+      <h1 class="w3-xxxlarge w3-text-red"><b>Contact us</b></h1>
       <hr style="width:50px;border:5px solid red" class="w3-round">
-      <p>Visit us on Facebook</p>
+      <!-- <p>Visit us on Facebook</p>
       <button onclick="window.open('https://www.facebook.com/instralabs/','_blank')">Visit on Facebook</button>
+      <br> -->
       <br>
-      <br>
-      <p>Do you have a question/idea/suggestion about the product? Fill out the form and fill me in with the details :) We love listening to you!</p>
+      <p>Do you have a question? Email us: <b>elena@u-mega.com</b> </p>
 
       <!-- Form -->
       <!-- this will be sent to serveras POST:
       /action_page.php?Name=aaa&Email=bbb&Message=cccc -->
-      <form action="./action_page.py" target="_blank" method="post">
+      <!-- <form action="./action_page.py" target="_blank" method="post"> -->
+      <!-- <form action="./welcome.php" target="_blank" method="post">
         <div class="w3-section">
           <label>Name</label>
           <input class="w3-input w3-border" type="text" name="Name" required>
@@ -365,7 +455,7 @@
           <input class="w3-input w3-border" type="text" name="Message" required>
         </div>
         <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
-      </form> <!-- End of Form -->
+      </form> <!- End of Form -->
     </div>
 
   <!-- End page content -->
@@ -393,6 +483,42 @@
     document.getElementById("modal01").style.display = "block";
     var captionText = document.getElementById("caption");
     captionText.innerHTML = element.alt;
+  }
+  // for gallery-1
+  var slideIndex = 1;
+  showDivs(slideIndex);
+
+  function plusDivs(n) {
+    showDivs(slideIndex += n);
+  }
+
+  function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+  }
+  // for gallery-2
+  var slideIndex2 = 1;
+  showDivs2(slideIndex2);
+
+  function plusDivs2(n) {
+    showDivs2(slideIndex2 += n);
+  }
+
+  function showDivs2(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides2");
+    if (n > x.length) {slideIndex2 = 1}
+    if (n < 1) {slideIndex2 = x.length}
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    x[slideIndex2-1].style.display = "block";
   }
   </script>
 
